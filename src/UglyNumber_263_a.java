@@ -8,8 +8,12 @@ import java.util.Set;
  */
 public class UglyNumber_263_a {
     public static void main(String[] args){
+        long startTime=System.nanoTime();
+
         UglyNumber_263_a u=new UglyNumber_263_a();
         System.out.println(u.isUgly(905391979));
+        long endTime=System.nanoTime();
+        System.out.println((endTime-startTime)/1000000);
     }
 
     public boolean isUgly(int num) {
