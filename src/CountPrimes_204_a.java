@@ -3,10 +3,11 @@
  */
 public class CountPrimes_204_a {
     public static void main(String[] args) {
+        long startTime=System.nanoTime();
         CountPrimes_204_a cc = new CountPrimes_204_a();
-        boolean[] a = new boolean[3];
-//        System.out.println(a[0]);
-        System.out.println(cc.countPrimes(6));
+        System.out.println(cc.countPrimes(999999999));
+        long endTime=System.nanoTime();
+        System.out.println((endTime-startTime)/1000);
     }
 
     public int countPrimes(int n) {
